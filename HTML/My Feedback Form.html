@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>
+            My Feedback Form
+        </title>
+    </head>
+    <body>
+        <h1>My Feedback Form</h1>
+        <form>
+        <ul>
+        <li><label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name"/></li>
+        <li><label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email"/></li>
+        <li><label for="Name">Password:</label>
+        <input type="Password" id="Password" name="Password"/></li><br>
+        <li><label>Please check all the emotions that apply to you:</label></li>
+        <ul style="list-style-type:disc">
+            <li><label for="Angry">Angry</label>
+            <input type="Checkbox" id="Angry" name="Please check all the emotions that apply to you:" value="Angry"/></li>
+            <li><label for="Sad">Sad</label>
+            <input type="Checkbox" id="Sad" name="Please check all the emotions that apply to you:" value="Sad"/></li>
+            <li><label for="Happy">Happy</label>
+            <input type="Checkbox" id="Happy" name="Please check all the emotions that apply to you:" value="Happy"/></li>
+            <li><label for="Ambivalent">Ambivalent</label>
+            <input type="Checkbox" id="Ambivalent" name="Please check all the emotions that apply to you:" value="Ambivalent"/></li>
+        </ul>
+        <li><label>How satisfied were you with our service?</label></li>
+        <ul style="list-style-type:disc">
+            <li><label for="Very satisfied">Very satisfied</label>
+            <input type="Radio" id="Very satisfied" name="How satisfied were you with our service?" value="Very satisfied"/></li>
+            <li><label for="Satisfied">Satisfied</label>
+            <input type="Radio" id="Satisfied" name="How satisfied were you with our service?" value="Satisfied"/></li>
+            <li><label for="Didn't care">Didn't care</label>
+            <input type="Radio" id="Didn't care" name="How satisfied were you with our service?" value="Didn't care"/></li>
+            <li><label for="Dissatisfied">Dissatisfied</label>
+            <input type="Radio" id="Dissatisfied" name="How satisfied were you with our service?" value="Dissatisfied"/></li>
+            <li><label for="Very dissatisfied">Very dissatisfied</label>
+            <input type="Radio" id="Very dissatisfied" name="How satisfied were you with our service?" value="Very dissatisfied"/></li> 
+        </ul>
+        <li><label>Further comments:</label>
+        <textarea style="width:250;height:50;resize:none"></textarea></li>
+        <li><label for="Bio photo">Bio photo:</label>
+        <input type="text" id="Bio photo" name="Bio photo"/>
+        <button title="Choose...">Choose...</button></li>
+        <li><label for="Location visited">Location visited:</label>
+        <select id="Location visited" name="Location visited">
+            <option value="">Select Location:</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Surat">Surat</option>
+            <option value="Jaipur">Jaipur</option>
+        </select></li>
+        <li><input type="Submit" value="Submit"/></li>
+        </ul>
+    </form>
+    </body>
+</html>

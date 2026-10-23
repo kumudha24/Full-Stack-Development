@@ -1,0 +1,24 @@
+body{
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+#link{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+a:link{
+    color: green;
+}
+a:hover{
+    color: blueviolet;
+    background-color: wheat;
+    border-radius: 25px;
+}
+a:active{
+    color: chartreuse;
+}
+a:visit{
+    color: cyan;
+}

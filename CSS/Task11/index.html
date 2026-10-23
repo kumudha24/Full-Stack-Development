@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>z-index</title>
+        <style>
+            .container{
+                position: relative;
+                height: 300px;
+                width: 300px;
+                background: #eee;
+                z-index: 0;
+            }
+            .child{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .child1{
+                background: purple;
+                top: 20px;
+                left: 20px;
+                z-index: 1;
+            }
+            .child2{
+                background: red;
+                top: 70px;
+                left: 70px;
+                z-index: 2;
+            }
+            .outside{
+                background: blue;
+                top: 120px;
+                left: 120px;
+                z-index: -1;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="container">
+        <div class="child child1">z-index value 1</div> 
+        <div class="child child2">z-index value 2</div> 
+        </div> -->
+        <div class="outside">z-index value -1</div> 
+    </body>
+</html>

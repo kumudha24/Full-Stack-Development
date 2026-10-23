@@ -1,0 +1,28 @@
+body{
+    background-color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    color: #333;
+}
+.table-style{
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.table-style th,
+.table-style td{
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.table-style thead{
+    background-color: #0098 #0078;
+    color: green;
+}
+.table-style tbody tr:nth-child(odd){
+    background-color: #f3f3f3;
+}

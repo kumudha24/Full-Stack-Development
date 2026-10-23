@@ -1,0 +1,17 @@
+tr-Table Rows
+th-Table Head Contents
+thead-Table Head
+tbody-Table Body
+td-Table Data
+
+Anchor Tag
+It will take us to the site.
+href-Hyperlink Reference(Mostly will give url)
+target fixed means will open at the same place
+(target open in same tab).
+
+Marquee
+behavior:
+*scroll
+*slide-stops at end
+*alternate-again starts from end

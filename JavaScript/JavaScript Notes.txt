@@ -1,0 +1,404 @@
+JavaScript:
+
+-JavaScript is split into AngularJS, ReactJS and React Native(Mobile)
+-JavaScript was built by Brendan Eich
+-It is a Dynamic Programming Language
+-First it was called LiveScript then JavaScript now it is called ECMA Script
+-ECMA="European Computer Manufactures Association"
+-Numbers no double quotes but string inside double quotes
+
+var,let,const-Keywords
+
+-var(variable)
+*No restriction we can use it anywhere
+*Disadvantage:Memory is consumed more
+var a=10;
+console.log(a);
+var a=20;
+console.log(a);
+-let
+*Used 
+*Cannot be redeclared
+*It is block scope
+-const(constant)
+*Cannot be redeclared
+
+Variable is a container in which data is stored
+
+Data Types:
+1)Primitive Datatype
+*String-group of character(eg:firstname=Kumudha) 
+
+*Number-cannot type any alphabets
+
+*Boolean-true\false
+
+*Symbols
+
+*Null
+let a
+a=10
+
+*Undefined-(let 10)-does not know its container
+
+2)Non primitive datatype
+*Object-let person = { name: "Meena", age: 25 };
+person-variable name
+object-{} stored in set bracket
+object will always be as key value pair(key and value)
+name and age are key-They are static data cannot change
+Meena and 25 are values-They are dynamic data
+
+*Array[]
+let numbers=[1,2,3,4];
+array-group of same elements 
+
+*Date 
+let today = new Date();
+gives today's date
+
+*Function
+function wishes() {
+  return "Happy Birthday";
+}
+function-keyword
+wishes-function name
+
+TYPE CONVERSION IN JAVASCRIPT
+To convert one datatype to another datatype
+typeof-keyword is used
+1)String to Number
+
+OPERATORS
+1)Arithmetic Operator
+*Addition 
+*Subtraction
+*Multiplication
+*Division
+*Modulus
+*Increment-Digital Clock,Age Calculator
+*Decrement
+
+2)Shorthand Assignment Operator
+
+3)Relational Operator
+-Returns boolean value
+>,<,>=,<=
+
+4)Assignment Operator
+"=" (Equal To)
+
+5)Comparison Operator
+== It checks only the value does not check for type
+=== It checks the value as well as type
+!=,!==
+
+6)Logical Operator
+*Logical AND
+*Logical OR
+*Logical NOT
+
+7)Ternary Operator 
+condition ? expression1 : expression2;
+Condition true means expression1
+Condition false means expression2
+
+CONDITION CLASSES
+*if statement
+if(condition)
+{
+    .....
+}
+
+*if else statement
+
+*else if statement
+if(cond)
+  {
+    ----
+  }
+  else if(cond)
+  {
+    ----
+  }
+  else
+  {
+    ---
+  }
+-Even if the first if statement fails, it still goes to the next one and checks all the if statements.
+
+*nested if statement
+if(cond)
+{
+  if(cond)
+  {
+    ---
+  }
+}
+
+*switch statement
+
+
+LOOPING
+-for loop
+-while loop
+*entry controlled loop
+-do while loop
+*exit controlled loop
+*condition is checked at the last
+
+FOR LOOP AND IF CONDITION (Console)
+Task 1
+Print number 1 to 50
+Task 2
+Print Even numbers from 1 to 100
+Task 3
+Print Multiplication table for 5
+Task 4
+Find sum of numbers from 1 to 100
+
+WHILE LOOP 
+Task 5
+Reverse count 10 to 1
+Task 6
+Odd numbers 1 to 50
+Task 7
+Count digit in a number
+
+DO WHILE
+Task 8
+Factorial
+
+*continue 
+continue is used to skip the current iteration the loop continues with the next iteration
+*break
+break is used to stop the loop completely when break is executed the loop ends immediately
+
+string and array:
+string:
+string is a sequence of character used to store text." ",' ',` `
+Inbuilt operators:
+*literals $
+*trim
+
+array:
+array is used to store multiple values in a single variable.
+
+Task 1:
+Temperature<20 deg
+background color or image - white or blue
+message Good Night
+Temperature<50 deg
+background color or image - light orange
+message Good Morning
+Temperature>50 deg
+background color or image - red colour
+message Good Afternoon
+
+Task 2:
+Calculator
+Use switch case
+In HTML-2 input and one result
+Get 2 numbers
+4 buttons:
+1->Addition
+2->Subtraction
+3->Multiplication
+4->Division
+
+Task 3:
+Counter 
+if condition
+3 buttons
+1-Increment
+2-Decrement
+3-Reset (should show 0)
+Initial Value 0
+
+function:
+*function is a block of code that performs a specific task.
+*function avoids code repetition
+*Types of function:
+1)named function
+-A function that has a name and can be called by that name is called named function
+Example:
+function add(a, b) {
+    return a + b;
+}
+add(5, 3);   // 8
+
+2)anonymous function (without a name)
+-A function that does nat have a name and is usually stored in a variable
+-function without a name
+-Example:
+let greet = function () {
+    console.log("Hello!");
+};
+greet();//Hello!
+
+3)arrow function
+-A shorter syntax for writing functions
+-Example:
+let multiply = (a, b) => {
+    return a * b;
+};
+console.log(multiply(2,3));//6
+
+Short form:
+let multiply = (a, b) => a * b;
+console.log(multiply(2,3));//6
+
+4)function with parameter
+-A function that accepts values (parameters) when called
+-Example:
+function square(n) {
+    console.log(n * n);
+}
+square(4);// 16
+
+
+5)function with return value
+-A function that returns a result using return
+-Example:
+function sum(a, b) {
+    return a + b;
+}
+let result = sum(10, 20);
+console.log(result);// 30
+
+6)immediately invoked function
+-A function that runs immediately after it is defined
+-Example:
+(function () {
+    console.log("I am executed immediately");
+})();
+
+7)call back function
+-A function passed as an argument to another function and executed later
+-Example:
+function display(result) {
+    console.log(result);
+}
+function calculate(a, b, callback) {
+    let sum = a + b;
+    callback(sum);
+}
+calculate(5, 10, display);//15
+
+8)recursive function
+-
+-Example:
+function factorial(n) {
+    if (n === 0)
+        return 1;
+    else
+        return n * factorial(n - 1);
+}
+factorial(5);// 120
+
+Camel Case:
+First word starts with a lowercase letter(most common in JavaScript)
+example:
+userName
+totalMarks
+calculateSum
+
+Classes and Object
+Object:
+*first it is declared
+*real world things, actions
+Classes:
+*blueprint,template
+
+*Objects and class are key value pairs 
+*This is how key value pairs are declared:
+key:value
+
+*class-blueprint to create object
+*object-collection of properties and methods
+*constructor-is a keyword which is used initialize data
+*this-is used to refer to current object
+*new-is a keyword used to create object from classes
+
+Event:
+-click 
+-double click
+-mouseover(when mouse hovers)
+-mouseout(when mouse comes out)
+-key up(key released)
+-key down(key pressed)
+-change(when input value changes action triggers)
+-loading(during loading stage show this message)
+
+Task:
+I:
+Create Class and Object
+1)Class name:Mobile,Constructor(brand,model)
+2)Class name:Book,Constructor(title,author)
+3)Class name:Student,Constructor(name,marks)
+
+II:
+Create a card that has a small cirle in the middle that has the first letter of your name 
+in capital using events make sure the size of the circle increases.
+
+III:
+Create Card Flip 
+Card 1:HTML on flipping it should show HTML Logo
+Card 2:CSS on flipping it should show CSS Logo
+Card 3:JavaScript on flipping it should show JavaScript
+
+promise,await,async
+API-Application Programming Interface
+-Cannot create API only using JavaScript it is its disadvantage,Java is used for it
+API to run applications
+cannot run directly for this we use the below four keyword
+1)post-to give data to the server
+2)get-to get data
+3)put-catch-already have data to change some element in it
+4)delete
+
+promise-has 3 stages
+1st stage-pending
+2nd stage-fullfilled
+3rd stage-rejected
+async(asynchronous)-all should run at a time
+await-wait to min and play video when ideal in Youtube
+
+closures-It is a feature where inner function can access the outer function variable and outer function access the inner function variable.
+
+event delegation-To consume memory(stored data) with user's permission,similar to Google Account Sign In that can be used in multiple websites and services.
+
+json-JavaScript Object Notation
+
+NaN-Not a number,only number can be used no text
+
+DOM-Document Object Model
+follows top to bottom structure
+HTML,CSS,JavaScript
+
+function expression-To store a value in a variable and return it
+function declaration-Function followed by function keyword,to do something
+
+local storage-permanent storage
+session storage-only for a particular time
+
+Task 
+Dark Mode/Light Mode
+Moon symbol-on pressing should change
+Frontend as per our wish
+Text should also be there 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

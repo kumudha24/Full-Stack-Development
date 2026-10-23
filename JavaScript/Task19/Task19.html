@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>Call Back Function</title>
+</head>
+<body>
+    <script>
+        function showMessage(callback){
+            callback();
+        }
+        function SayHi(){
+            console.log("Hi");
+        }
+        showMessage(SayHi);
+    </script>
+</body>

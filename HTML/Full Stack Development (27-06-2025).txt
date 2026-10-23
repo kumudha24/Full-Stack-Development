@@ -1,0 +1,24 @@
+PROGRAMMING LANGUAGES
+Low level-C, C++
+Middle level-Java
+High level-Python, Ruby
+
+FULL STACK DEVELOPMENT
+Frontend languages-HTML, CSS, JavaScript, Bootstrap
+Backend languages-Java, Python, C#, Dotnet, NodeJS
+Database- MySQL, NoSQL, Mongo DB   
+
+FRAMEWORK
+ReactJS(Website Application), Angular(Java), Spring Boot, Loopback(Node JS),React Native(Mobile Application),Django DB(Python)
+
+ARTIFICIAL INTELLIGENCE(AI)
+Data Structures, Python, Machine Learning
+
+
+HTML(Hyper Text Markup Language)
+TAG
+There are 130 tags(Example:<html>, <head>, <body> etc)
+80+tags are frequently used
+Two types
+1)Container tags-Open and close tagging. 
+2)Self closing tags-No closing tags we can close here itself.

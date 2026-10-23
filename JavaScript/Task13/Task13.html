@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Function</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+        }
+        .card{
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1{
+            margin-bottom: 15px;
+            color: #333;
+        }
+        button{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover{
+            background-color: #0056b3;
+        }
+        p{
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Sum of two numbers</h1>
+        <button onclick="calculateSum()">Calculate 5+3</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        let sum=function(a,b){
+            return a+b;
+        }
+        function calculateSum(){
+            const result=sum(5,3);
+            document.getElementById("result").innerText="Result:"+result;
+            console.log(result);
+        }
+    </script>
+</body>

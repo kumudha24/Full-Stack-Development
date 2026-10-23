@@ -1,0 +1,160 @@
+SYLLABUS
+
+***HTML***
+
+1.Introduction about HTML
+2.Building blocks
+3.Tags and Attributes
+4.Elements
+5.Formatting Tags
+6.Practical's with Tags
+(List, Image, Link)
+7.Form Tag
+8.Input Tag
+9.Meta Tag
+10.Media Tag
+11.Table Tag
+Practical
+
+
+***CSS***
+
+Common CSS Selectors
+Values
+Colors
+Keyword Colors
+RGB
+HSL
+Absolute Length
+Relative Length
+Percentages
+EM
+Inline Display
+Working with BOX model
+Content Box
+width
+Height
+Margin and Padding
+Color & Declarations
+
+Working with Borders
+Individual Border
+Radius
+Padding Box
+Border Box
+With Practical's
+
+
+***BOOTSTRAP***
+
+
+Bootstrap Pagination
+Dropdown
+Navigation Bar
+Carousel
+Filters And Grid with
+Practical's
+
+***JAVA SCRIPT***
+
+
+Introduction
+Arrays
+Variables
+Typecasting
+Operators with
+Loops
+Conditional statements
+Functions with Practical's
+Classes & Objects
+Practical's
+
+***JAVA***
+
+
+Introduction about Java
+Internal working of a java program
+Software Installation
+Collection Framework
+Introduction
+Collection Framework Implementations
+HashSet
+Linked Hash Set
+Array List
+Stack
+LinkedList
+Vector
+Map
+Date and calendar with practical session
+Loops
+Conditional statement with practical's
+Arrays single and
+multidimensional
+OOPS Introduction
+Class and Objects
+Constructor
+Polymorphism
+Abstraction & Encapsulation Packages
+Inheritance
+Final, This, Super keywords
+Static
+Wrapper Class
+Inner Class
+Implementation of 50 essential logical Programs
+using Java Script
+String Handling Methods
+String Buffer
+String Tokenizer
+Introduction about Exception Handling
+Built in Exception
+User Defined Exception
+Practical
+Creating database and Tables
+Basic queries
+JDBC architecture
+File Class
+I/O Stream Hierarchy
+File Input Stream
+File Output Stream
+Practical with File handling
+Introduction about Multithreading
+Thread Lifecycle
+Thread Class
+Runnable Interface and Synchronization
+Threading Practical
+
+***MYSQL***
+
+MYSQL Connector Practical Programs with
+CRUD operation
+Queries in advance and its implementation
+MYSQL Joins with backend implementations
+
+***JSP AND SERVLET***
+
+JSP Life cycle
+JSP API
+Scripting elements
+Scriptlet , Expression & Declaration tag, Implicit
+Objects, Request, Response, Exception, Session
+Java Beans
+Servlet terminology
+Servlet API
+Generic Servlet
+Http Servlet
+Servlet Life Cycle
+JSP/Servlet implementation in MVC Architecture
+
+***SPRING BOOT FRAMEWORK***
+
+Spring Introduction and Installation
+Spring Boot MVC set up with CRUD operation
+Spring Boot with JPA for Rest API
+Spring Boot Security
+Spring Boot with Micro Services
+Project Implementation ER diagram and Project
+Architecture
+Project Documentation and Design Analysis
+
+
+

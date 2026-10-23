@@ -1,0 +1,434 @@
+Editors used in Java:
+3 IDE (Integrated Development Environment)
+1)Eclipse IDE-Enterprise application
+2)IntelliJ IDEA-Enterprise application
+3)NetBeans-Used for gaming
+
+For Frontend Development use Visual Studio Code
+For Java use Eclipse IDE
+
+class
+-It is a keyword or blueprint.
+-It is a collection of variable and method.
+class name
+-First letter should be in capital. 
+-No spacing between each word.
+-Mostly avoid numbers
+-Use underscore for two words
+
+Access Specifiers:
+-public
+-private
+-protected
+
+static
+-only user can change.
+-It can't change by itself.
+
+void
+-It returns output
+string 
+-For string since it is most commonly used
+
+args
+-Arguments
+
+Java is case sensitive
+Can create:
+-Console based Application 
+-Web based Application
+
+
+VARIABLES:
+PRIMITIVE DATA TYPES:
+1)string
+-Values within double quotes " "
+2)int
+-Integer without decimal
+3)float
+-Store point numbers > 6 digits
+4)double
+-Store point numbers < 6 digits
+5)char
+-character 
+-To store single character where we will not use string 
+-example:blood group ,male ,female etc 
+-we use single quotes ' '
+6)boolean 
+-To store true or false
+
+NON PRIMITIVE DATA TYPES:
+1)string 
+-Several strings together
+2)null 
+-No value will be declared 
+-For example 
+int z;
+3)array 
+
+LOGICAL OPERATOR:
+1)Logical AND
+-Both the conditions should be satisfied
+2)Logical OR
+-Only one condition needs to be satisfied
+
+OPERATOR PRECEDENCE:
+-Parenthesis
+-Multiplication/Division/Modulus
+-Addition/Subtraction
+-Comparison(<,<=,>,>=)
+-Equality
+-Logical AND
+-Logical OR
+-Assignment Operator(=)
+
+CONDITIONAL STATEMENTS:
+-if 
+-else if
+-nested if 
+-short hand if (ternary)
+
+TASK:
+1)Check whether a number is odd or even
+2)Voting eligibility
+-Condition age>=18 -> Eligible to vote
+3)Pass or Fail
+-Pass(>35)else Fail
+4)Leap year
+5)Temperature checker
+-Above 35 -> hot
+-Between 20-35 -> normal
+-Below 20 -> cold
+
+LOOPING:
+-for loop
+-while loop
+-do while loop
+-switch
+
+TASK:
+Stone,Paper,Scissor
+Assign:
+Option 1 Stone
+Option 2 Paper
+Option 3 Scissor
+-Using if condition 
+-Get user selection using Scanner class 
+-Show the output in the console
+
+STRING:
+-A string is a sequence of character.
+-String methods:
+There are 6 methods:
+->length()-returns string length
+->toUpperCase()-to convert to upper case
+->toLowerCase()-to convert to lower case
+->charAt()-returns character at index
+->equals()-compare two strings
+->contains()-check sub string
+
+TASK-String:
+1)Print first character of a string
+2)Count vowels in a string
+3)Check palindrome (madam)
+
+ARRAY:
+-Stores multiple values in a single variable
+
+TASK-Array:
+1)Reverse an array
+-Input 1,2,3,4,5
+-Output 5,4,3,2,1
+2)Find the smallest number in an array
+3)Total average calculation (Student mark sheet)
+
+-In Java functions are called methods
+
+METHOD:
+-Method is a block of code that performs a particular task and can be reused many times
+->static-does not change anywhere
+->dynamic-changes based on their role
+-That is for example in college website:
+Student Login-Students will get a particular website
+Professor Logic-Professors will get a particular website
+
+-We are currently learning Java7
+-In newer versions of Java only we have Arrow function and other functions similar to the ones we learnt in JavaScript
+
+Types of methods in Java:
+1)Method without parameter
+2)Method with parameter
+3)Method with return type
+->In return type we should not put void 
+->The datatype that is returned in the result should be given
+4)Method overloading
+-Same method name with different parameters
+For example:
+If in the name of sum we have two methods that is:
+        static int sum(int a,int b) {
+		return a+b;
+	}
+	
+	static int sum(int a,int b,int c) {
+		return a+b+c;
+	}
+In the main:
+                int result = sum (12,5);
+		System.out.println("Add result is:"+result);
+		//overloading
+		int result1 = sum (12,5,7);
+		System.out.println("Result from overloading:"+result1);
+
+Based on the number of parameters we have given it will match with the relavant method and execute.
+In the above case 2 parameters or 3 parameters.
+
+CLASS AND OBJECT:
+->Class is a blueprint of an object
+Example:A car
+->Object is an instance of class
+Example:Nano car,Maruthi car,Audi car
+
+OOPS CONCEPT
+-Four Important Concepts
+
+1)ENCAPSULATION:
+-Data hiding using private variable and getters or setters
+-Value declared using getters and setters will be taken to see the output
+
+2)INHERITANCE:
+-One class acquiring property of another class
+Example:Phone call in phones
+->Concatinating basic features throughout development
+->Phone call is a basic feature
+-Should create parent and child class
+-In child class we will call parent class
+-Navigation through multiple tabs we can still access our login information in websites
+Example:In Amazon while shopping across all tabs our login information is present  
+-Keyword:extends
+
+3)POLYMORPHISM:
+-Method overriding
+-Method name is same but staement inside is different
+-Last statement is give as output
+-Returns recent value
+Example:Most recent phone number should be displayed 
+But in database all the phone numbers should be there this is:
+In 2008-2016: Phone Number-8967253247
+In 2017-2025: Phone Number-3674829384
+In 2026-Present: Phone Number-1234567892
+When Phone Number is called it should display:1234567892-The recent Phone Number
+
+4)ABSTRACTION:
+-Hiding implementation detail
+-Inbuilt process are not shown as in 
+Small 'a'-one ASCII value
+Capital 'A'-one ASCII value
+keyword:extends
+-Class created as abstract
+
+5)CONSTRUCTOR:
+-Not a main OOPS Concept
+-Constructor is a special method used to initialize objects
+
+ACCESS SPECIFIER:
+-public 
+->Can access anywhere
+-private
+->Access through permission,know person
+-producted
+->More security
+->Eventhough permission is given multiple checks will be there
+Example:While login to a website or app Password,Email Verification,OTP Verification etc
+
+-this word is used to access recent 
+class Employee{
+	private int salary;
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+	public int getSalary() {
+		return salary;
+	}
+}
+
+TASK:
+-Create a Portfolio
+
+COLLECTIONS:
+-To save numbers as well as string in a object
+-Collection framework is a set of classes and interfaces used to store group of data
+-Interfaces used:
+*List
+*Set
+*Queue
+*Map
+
+1)ARRAY LIST:
+Features:
+-Ordered collection,
+-Allow duplicates,
+-Fast accessing list
+
+2)LINKED LIST:
+-Can only add at the fast as well as last
+Features:
+-Fast insertion as well as deletion
+
+3)VECTOR:
+-To store character like initial
+
+4)STACK:
+-Last in first out-LIFO
+
+5)HASH SET:
+Features:
+-Unordered list
+-Does not allow duplicates
+
+6)MAP:
+-No duplicate key ,values can be duplicate
+-Key value pair
+
+TASK:
+1)Arraylist
+-Add 5 animal names and print them using loop 
+-Do not use variable.add
+2)LinkedList 
+-Insert element at first and last position 
+3)Vector 
+-Add three element and remove one element 
+4)Stack 
+-Push 5 numbers and pop 2 numbers
+5)HashSet 
+-Add duplicate value and observe the output
+6)Map 
+-Store student id card (id,name) and print them using loop
+
+INNER CLASS AND OUTER CLASS:
+-Calling inner class using outer class
+
+EXCEPTION HANDLING:
+1)Arithmetic exception-Inbuilt
+2)Array index out of bounds exception-Inbuilt
+3)Number format exception-Inbuilt
+4)User defined exception-User defined by own words
+
+String Buffer and String Builder:
+String immutable
+-Value cannot be changed anytime anywhere
+-But I need it changed means we can use String buffer and builder
+String Buffer:
+-Safe 
+-Slow 
+-Accepts multithread (2 or more tabs at a time) environment
+String Builder:
+-Not safe
+-Fast
+-Single thread environment
+
+INBUILT FOR STRING BUILDER AND STRING BUFFER:
+1)append-Add text at the end
+2)insert-Insert text at a specific position
+3)replace-Replace character from one index to another
+4)delete-Remove charater from a string 
+5)reverse-Reverse the string (for encrypting and sending the data)
+
+WRAPPER CLASS:
+-It is a class that converts primitive datatype into an object
+1)int-Integer
+2)float-Float
+3)double-Double
+4)char-Character
+
+STRING TOKENIZER:
+-It is used to split a string into smaller parts called tokens
+-Example:Java is easy to learn 
+The output should be:
+Java=token1
+is=token2
+easy=token3
+to=token4
+learn=token5
+
+MULTITHREADING:
+-Multithreading is the process of executing multiple threads at the same time
+1)new
+-Displays the same that is given in the class (thread object created)
+2)runnable
+-Thread ready to run (thread lifecycle)
+3)running
+-Thread is executing
+4)blocked or waiting
+-Waiting for resource
+5)terminated
+-Thread finished execution
+
+These are happening in the backend
+
+FILE HANDLING IN JAVA:
+Buffer Reader and Buffer Writer can be used to write in an already created file.
+createNewFile-Creates a new file
+exists()-Check file exists or not
+getFileName()-Gets file name
+delete()-Delete file
+writer-Write data into file
+append()-Add data to the file
+createStatement()-Creates a statement
+
+File Location:
+In eclipse-workspace it will be created.
+C:\Users\kumud\eclipse-workspace\Project_2
+sample.txt
+
+Task:
+File Handling in Java: Create a file, write to it and then delete it.
+
+JDBC-Java Database Connectivity
+Control+Shift+O-Import all packages(All import fixed commonly)
+JDBC
+1)MySQL Connectivity/JDBC Driver-Download
+2)Right click the project->Build path->Configure build path->Libraries->Add External JARS->Apply and Close
+3)JDBC Driver(Root name,Password)
+4)Module in folder 
+src->module-info.java->Add(requires java.sql);
+/**
+ * 
+ */
+/**
+ * 
+ */
+module Project_2 {
+	requires java.sql;
+}
+
+Download the connector from here:
+https://dev.mysql.com/downloads/connector/j/->Select Operating System->Platform Independent->Platform Independent 
+(Architecture Independent), ZIP Archive	9.7.0	5.1M	
+Download
+(mysql-connector-j-9.7.0.zip)
+
+Why createStatement() Is Needed
+When Java wants to send SQL commands to MySQL, it needs a Statement object.
+Example SQL commands:
+INSERT
+DELETE
+UPDATE
+SELECT
+Java cannot execute these directly.
+
+Task:
+In JDBC:
+Do the following to the queries of MySQL
+*Insert
+*Delete
+*Update
+
+
+
+
+
+
+
+
+
+

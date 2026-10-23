@@ -1,0 +1,13 @@
+mb-margin bottom
+mt-margin top
+ml-margin left
+mr-margin right
+mx-margin left+ margin right
+my-margin top+ margin bottom
+
+mb-0 (0 no pixel rate)
+mb-1 (4 pixel will be implemented)
+mb-2 (8 pixel)
+mb-3 (16pixel)
+mb-4 (24pixel)
+mb-5 (48pixel)

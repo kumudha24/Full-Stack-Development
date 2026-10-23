@@ -1,0 +1,24 @@
+body{
+    background-color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 25px;
+    padding: 20px;
+}
+.table-style{
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.table-style th,
+.table-style td{
+    padding: 12px 15px;
+    border: 0px solid #ddd;
+    text-align: center;
+}
+.table-style thead{
+    background-color: white;
+    color: black;
+}
+.table-style tbody tr:nth-child(odd){
+    background-color: lightskyblue;
+}

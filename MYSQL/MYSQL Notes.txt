@@ -1,0 +1,177 @@
+14_09_2025
+MYSQL Password:Kumudhab2004
+MYSQL-It is open source. It is a database not a language.
+The language we use is SQL.SQL-Structured Query Language.
+It is not a sequential query language. CRUD C-Create R-Read U-Update D-Delete to perform CRUD Operation.
+We are using Version 8 now.
+
+Similar to SQL:
+*NOSQL
+*MongoDB
+
+DDL-Data Definition Language
+We can Create, Alter and Drop.
+Admin responsible
+
+DML-Data Manipulation Language
+We can Insert, Update, Delete and Truncate.
+Developer responsible
+
+TCL-Transaction Control Language
+We use in ATM Machine. Save Point, Roll Back and Commit.
+Developer responsible
+
+DCL-Data Control Language
+Grant and Revoke.
+Admin responsible
+
+Developer responsible-DML,TCL
+Admin responsible-DDL,DCL
+
+DBMS-Database Management System
+RDMS-Relational Database Management System
+We are using Oracle Server for MYSQL.
+MYSQL is not case sensitive.
+It is a server based language right now we are using Version 8.
+
+Data Types
+1)Character-alphabets-char
+2)VARCHAR-Variable Character
+3)INT-Integer-(a)Tiny INT,(b)Small INT,(c)Medium INT,(d)Integer,(e)Big INT-Used to store phone numbers
+4)Decimal Numbers-(a)Float,(b)Double
+5)Date
+6)Date Time
+7)Year
+8)Time
+9)Text-(a)Tiny Text,(b)Text,(c)Medium Text,(d)Long Text
+10)Binary Large Object File (BLOB)-To store image, audio and video files.
+
+Basic Queries
+*create database database_name;
+To create new database
+*drop database database_name;
+To delete database
+*show databases;
+To show all the databases in our system
+*use database database_name;
+To use a particular database
+*show tables;
+Shows all the tables in that particular database
+*CREATE table table_name(column_name datatype(maximum character));
+*drop table table_name;
+To delete the table
+
+27_09_2025
+Question:
+Create a table Students with the following columns:
+student_id (INT, Primary Key)
+first_name (VARCHAR(50))
+last_name (VARCHAR(50))
+age (INT)
+grade (VARCHAR(10))
+
+Answer:
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    age INT,
+    grade VARCHAR(10)
+);
+What PRIMARY KEY means:
+A primary key is a column (or a set of columns) that uniquely identifies each row in the table.
+Rules of a primary key:
+Uniqueness → No two rows can have the same value in the student_id column.
+Not NULL → A primary key cannot be NULL, because every record must have an identifier.
+
+So in this table:
+student_id uniquely represents each student.
+Even if two students have the same first_name, last_name, or grade, their student_id will always be different.
+
+| student_id | first_name | last_name | age | grade |
+| ---------- | ---------- | --------- | --- | ----- |
+| 1          | Rahul      | Sharma    | 20  | A     |
+| 2          | Rahul      | Sharma    | 20  | A     |
+
+select * from Students where first_name like "A%";-This filters the first_name starting with A.
+select * from Students where first_name like "%A";-This filters the first_name ending with A.
+select * from Students where first_name like "%I%";-This filters the first_name that has i in the middle
+select * from Students where first_name like "__h%";-This filters the first_name that has the third letter i
+(All these are not case sensitive we can either use I or i)
+ 
+Conditions:
+=(Equal to)
+>(Greater than)
+<(Less than)
+>=(Greater than equal to)
+<=(Less than equal to)
+<>(Not equal to)
+between
+like
+in
+where
+dry-Don't repeat yourself
+
+Constraints:
+There are 7 constraints
+1)not null (mandatory field -cannot be a null value)
+2)unique (all values are different like id, roll no)
+3)primary (In college as well as department our name should be present-combination of not null and unique)
+4)foreign key -link between more than one table
+5)check condition -specify some condition like age>18
+In some cases the age will definitely will be less than 17 for people studying in school so when we give some wrong value for example 23 it will throw an error.
+6)default -set a default value
+7)create index -easily retrieve data from the database
+
+05-10-2025
+1)Foreign Key-Relationship between two tables
+2)Joins
+Left Join(same table)-List all students even those who do not belong to a department,
+Right Join(same table)-List all departments even if they have no students,
+Inner Join(common between two table)-To display all students with their department name,
+Cross Join(generating combinations),
+Self Join(dot operator) and
+Full Join-Combine left and right join using union operator.
+3)Union
+4)Aggregate Functions
+1)Group By
+2)Minimum,Maximum,Count,Average,Summation,Having
+
+1)Function
+2)Views
+3)Operators
+4)Cases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

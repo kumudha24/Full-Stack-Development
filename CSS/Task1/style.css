@@ -1,0 +1,27 @@
+#corner1{
+    border-radius: 15px 50px 30px 5px;
+    background: #73ad21;
+    width: 200px;
+    height: 150px;
+}
+
+#corner2{
+    border-radius: 50px;
+    background: #73ad21;
+    width: 200px;
+    height: 150px;
+}
+
+#corner3{
+    border-radius: 50px 25px;
+    background: #73ad21;
+    width: 200px;
+    height: 150px;
+}
+
+#corner4{
+    border-radius: 50px 25px;
+    background: #73ad21;
+    width: 200px;
+    height: 150px;
+}

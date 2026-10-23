@@ -1,0 +1,52 @@
+/* div{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+div:hover{
+    width: 300px;
+    height: 300px;
+    transition: height 1s;
+} */
+h1{
+    text-shadow: 5px 5px 5px black;
+}
+.button1{
+    background-color: #4CAF50;
+    border: 2px solid red;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    border-radius: 25px;
+}
+.button2{
+    background-color: #008CBA;
+    border: 2px;
+    padding: 25px;
+}
+.button3{
+    background-color: #F44336;
+    border: 2px;
+    padding: 5px;
+}
+.button4{
+    background-color: #E7E7E7;
+    border: 2px;
+    padding: 2px;
+}
+.button5{
+    background-color: #5555;
+    border: 2px;
+    padding: 10px;
+}
+.div1{
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+}
+.div2{
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+}

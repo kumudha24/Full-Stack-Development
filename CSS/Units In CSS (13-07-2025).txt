@@ -1,0 +1,8 @@
+Units used in CSS:
+1)Pixel (paper thickness, based on inch 1/96)
+2)Centimeter (2.5cm=1 inch)
+3)Millimeter (10mm=1cm)
+4)Viewport Height (vh,1% of the height of the visible screen)
+5)Point (1/72)
+6)Current Element (em, Cursor at that point)
+7)Root Element (rem, Any one element considered root element)

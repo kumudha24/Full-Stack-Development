@@ -1,0 +1,16 @@
+Grid- 2 Dimensional Layout (fr- fractional unit-used for flexibility)
+*grid-template-col
+*grid-template-row
+*gap
+*grid-col
+*grid-row
+Flex- 1 Dimensional Layout
+*flex-direction- (row, column, row reverse, column reverse)
+*justify-content- control alignment (main axis)
+*align-items (cross axis-that is x means it will be y)
+*flex-wrap (no wrap, wrap, wrap reverse)
+*flex
+
+position: absolute
+position: relative
+z-index

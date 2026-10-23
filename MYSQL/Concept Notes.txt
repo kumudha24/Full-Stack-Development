@@ -1,0 +1,52 @@
+Constraints:
+| Constraint      | Description                                                               | Example                                               |
+| --------------- | ------------------------------------------------------------------------- | ----------------------------------------------------- |
+| **PRIMARY KEY** | Uniquely identifies each record in a table (no duplicates, no NULLs).     | `EmpID INT PRIMARY KEY`                               |
+| **FOREIGN KEY** | Ensures data in one table matches values in another table (relationship). | `FOREIGN KEY (DeptID) REFERENCES Departments(DeptID)` |
+| **UNIQUE**      | Ensures all values in a column are unique (can have one NULL).            | `Email VARCHAR(100) UNIQUE`                           |
+| **NOT NULL**    | Ensures a column cannot have a NULL value.                                | `FirstName VARCHAR(50) NOT NULL`                      |
+| **CHECK**       | Restricts values based on a condition.                                    | `Salary DECIMAL(10,2) CHECK (Salary > 0)`             |
+| **DEFAULT**     | Assigns a default value if no value is given.                             | `Country VARCHAR(50) DEFAULT 'India'`                 |
+
+Joins:
+| Join Type       | Description                                           | 
+| --------------- | ----------------------------------------------------- | 
+| INNER JOIN      | Only rows that match in both tables                   | 
+| LEFT JOIN       | All rows from left table + matching rows from right   | 
+| RIGHT JOIN      | All rows from right table + matching rows from left   | 
+
+(05-10-2025) Task
+1. INNER JOIN (Borrowed books only)
+[Members]      [Borrow]      [Books]
+   M1  -----\
+   M2  -----|-----> included if borrow exists
+   M3  -----/
+          BR1, BR2, ...
+Explanation:
+Only members who have borrowed books (borrow exists).
+Only books that were borrowed appear.
+Equivalent to Task 1 & 4.
+
+2. LEFT JOIN (All members, even if never borrowed)
+[Members]      [Borrow]      [Books]
+   M1  -----\    
+   M2  -----|-----> included even if no borrow (BR=NULL)
+   M3  -----/    
+   M4  ------------------> included (never borrowed)
+Explanation:
+Start with all members (left table).
+Borrow info attached if exists.
+Book info attached if borrow exists; otherwise NULL.
+Equivalent to Task 2.
+
+3. LEFT JOIN (All books, even if never borrowed)
+[Books]      [Borrow]      [Members]
+   B1  -----\    
+   B2  -----|-----> included even if no borrow (BR=NULL)
+   B3  -----/    
+   B4  ------------------> included (never borrowed)
+Explanation:
+Start with all books (left table).
+Borrow info attached if exists.
+Member info attached if borrow exists; otherwise NULL.
+Equivalent to Task 3 & Task 5.

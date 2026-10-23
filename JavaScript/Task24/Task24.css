@@ -1,0 +1,25 @@
+.container{
+    margin-left: 40%;
+    margin-top: 15%;
+    width: 280px;
+    height: 350px;
+    background-color: rgb(233, 182, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px 4px rgb(99, 11, 99);
+}
+#circle{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(227, 120, 227);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: purple;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 4px 4px rgb(99, 11, 99);
+}

@@ -1,0 +1,16 @@
+Selectors:
+*id selector(#)
+*class selector(.)
+*tag selector
+
+Border radius(Borders are curved)
+Transition(Make the image large)
+Shadow effect
+Corner
+background-color(used in buttons)
+background(used in div, paragraph)
+border
+padding
+cursor: pointer
+color
+

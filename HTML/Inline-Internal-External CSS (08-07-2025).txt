@@ -1,0 +1,12 @@
+CSS Cascading Style Sheets
+Three types:
+1)Inline CSS
+2)Internal CSS
+3)External CSS
+
+Selectors:
+Three types:
+1)id selectors-id means #
+2)class selectors-class means .
+3)tag selectors
+

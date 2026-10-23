@@ -1,0 +1,27 @@
+Requirements:
+Student form must be in the center of the webpage
+Form:
+1)Field (input data) should be one by one
+2)Validation 
+-For name->First letter should not be a special character and no space is allowed
+3)DOB-Format (Example:01-01-2026) 
+-Set maximum length after adding 01 the - should appear automatically
+4)Radio button for gender
+-Male 
+-Female 
+-Transgender 
+-Outside one circle inside one circle model should be used for radio button
+5)Hobbies 
+-Multiselect
+6)Phone Number
+-10 digit maximum not more than that
+7)Aadhar or Pan Card upload 
+-Uploaded file should be downloadable
+8)Mode of Education
+-Dropdown
+-Mode of education state board or cbse 
+9)Save should not be enabled first 
+-All the fields should be filled until then save button should be in disable condition, once filled it should become green
+Table:
+In the table all data should be in the center
+

@@ -1,0 +1,25 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin-left: 38%;
+    margin-top: 15%;
+    width: 400px;
+}
+
+input{
+    width: 100%;
+}
+
+.night{
+    background-color: blue;
+}
+
+.morning{
+    background-color: lightsalmon;
+}
+
+.afternoon{
+    background-color: red;
+}

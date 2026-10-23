@@ -1,0 +1,32 @@
+body{    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ol{
+    list-style-position: outside;
+}
+ol li::marker {
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+}
+li{
+    color: black;
+    text-align:justify;
+    background-color: peachpuff;
+    padding: 8px;
+    width: 55%;
+    border-radius: 15px;
+}
+ol::before{
+    content: "";
+	width: 0.2cm;
+	height: 90%;
+    position: absolute;
+	top: 2%;
+	left: 28%;
+	background: peachpuff;
+	z-index: -1;
+}
+
+
+

@@ -1,0 +1,5 @@
+Path can be assigned as two types:
+1)Relative path- ./(Based on location)
+2)Absolute path-(Based on image root directory)
+src-source
+alt-alternate

@@ -1,0 +1,174 @@
+Student Form Code (Initial)
+
+>node
+
+✔️db.js
+const mysql=require("mysql2");
+const db=mysql.createConnection({
+    host:"localhost",
+    user:"root",
+    password:"Kumudhab2004",
+    database:"student_db",
+});
+db.connect((err)=>{
+    if(err){
+        console.log("database connection error",err.message);
+        return;
+    }
+    else{
+        console.log("mysql connected");
+    }
+});
+module.exports=db;
+
+✔️server.js
+const express = require("express");
+const cors = require("cors");
+const path = require("path");
+const db = require("./db");
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// ✅ FIXED STATIC PATH
+app.use(express.static(path.join(__dirname, "../public")));
+
+/* INSERT */
+app.post("/add", (req, res) => {
+  const { name, email, age } = req.body;
+  const sql = "INSERT INTO students (name, email, age) VALUES (?, ?, ?)";
+  db.query(sql, [name, email, age], () => {
+    res.send("Inserted");
+  });
+});
+
+/* FETCH */
+app.get("/students", (req, res) => {
+  db.query("SELECT * FROM students", (err, result) => {
+    res.send(result);
+  });
+});
+
+/* DELETE */
+app.delete("/delete/:id", (req, res) => {
+  db.query("DELETE FROM students WHERE id=?", [req.params.id], () => {
+    res.send("Deleted");
+  });
+});
+
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
+
+>public
+
+✔️index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Student Form</h2>
+
+<input id="name" placeholder="Name">
+<input id="email" placeholder="Email">
+<input id="age" placeholder="Age">
+<button onclick="addStudent()">Save</button>
+
+<h2>Student List</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th><th>Name</th><th>Email</th><th>Age</th><th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="tableData"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+✔️script.js
+function addStudent() {
+  fetch("http://localhost:3000/add", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      age: document.getElementById("age").value
+    })
+  }).then(() => {
+    loadStudents();
+  });
+}
+
+function loadStudents() {
+  fetch("http://localhost:3000/students")
+    .then(res => res.json())
+    .then(data => {
+      let rows = "";
+      data.forEach(s => {
+        rows += `
+          <tr>
+            <td>${s.id}</td>
+            <td>${s.name}</td>
+            <td>${s.email}</td>
+            <td>${s.age}</td>
+            <td>
+              <button class="delete" onclick="deleteStudent(${s.id})">Delete</button>
+            </td>
+          </tr>`;
+      });
+      document.getElementById("tableData").innerHTML = rows;
+    });
+}
+
+function deleteStudent(id) {
+  fetch(`http://localhost:3000/delete/${id}`, {
+    method: "DELETE"
+  }).then(() => loadStudents());
+}
+
+loadStudents();
+
+✔️style.css
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+input {
+  margin: 5px;
+  padding: 5px;
+}
+
+button {
+  padding: 6px 10px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  margin-top: 20px;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.delete {
+  background: red;
+}

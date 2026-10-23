@@ -1,0 +1,34 @@
+Formatting Tags:
+1)DL-If we hover it will show Deep Learning
+2)Bold letters 
+3)Different fonts. 
+
+HTML Styles:
+Basic Tags:
+Head Tags -To give heading. 
+6-Types
+h1,h2,h3,h4,h5,h6
+Predefined fixed point size.
+
+Attribute-Defined at the end of the opening tag.
+
+List:
+ 
+Ordered List<ol>
+ol-Ordered List
+*1 2 3
+*a b c
+*A B C
+*I II III[Roman Numbers]
+*i ii iii
+
+Unordered List<ul> 
+ul-Unordered List
+*Square
+*Circle 
+*Bullet
+
+Description List<dl>
+dl-Description List
+*dt-Description Term
+*dd-Description Definition
